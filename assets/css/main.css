@@ -3749,13 +3749,13 @@ body.is-preload #header.alt .logo {
   background-image: linear-gradient(90deg, var(--afterGradC1), var(--afterGradC2), var(--afterGradC3));
 }
 
-#main table tbody tr {
+/* #main table tbody tr {
   border-color: #dddddd;
-}
+} */
 
-#main table tbody tr:nth-child(2n + 1) {
+/* #main table tbody tr:nth-child(2n + 1) {
   background-color: rgba(222, 222, 222, 0.25);
-}
+} */
 
 #main table th {
   color: #636363;
@@ -3982,6 +3982,10 @@ body.is-preload #header.alt .logo {
 }
 
 .cor5 {
+  color: var(--c5a) !important;
+}
+
+.corEATZA {
   color: var(--c5a) !important;
 }
 
