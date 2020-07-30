@@ -19,9 +19,9 @@ function Calcular() {
   let custosAPP = Npedidos * TicketMedio * 0.12;
 
   document.getElementById("pedidosAPP").innerHTML = numberToReal(custosAPP) + " (12%)";
-  document.getElementById("totalAPP").innerHTML = numberToReal(custosAPP + 200);
+  document.getElementById("totalAPP").innerHTML = numberToReal(custosAPP + 100);
 
-  let diferença = custosAPP + 200 - totalEATZA;
+  let diferença = custosAPP + 100 - totalEATZA;
   if (diferença > 0) {
     document.getElementById("lucraMais").style.display = "block";
     document.getElementById("economiza").style.display = "block";

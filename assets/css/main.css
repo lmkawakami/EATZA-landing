@@ -3977,6 +3977,10 @@ body.is-preload #header.alt .logo {
   border: 1px solid var(--c1a);
 }
 
+.white {
+  color: white;
+}
+
 .cor1 {
   color: var(--c1a) !important;
 }
