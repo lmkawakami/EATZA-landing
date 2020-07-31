@@ -296,7 +296,7 @@
             </div>
             <div class="col-2 col-12-xsmall bottom">
               <ul class="actions">
-                <li><input type="submit" value="Calcular" class="primary" id="Calcular" onclick="Calcular()" /></li>
+                <li><input type="submit" value="Calcular" class="primary" id="Calcular"/></li>
               </ul>
             </div>
           </div>
@@ -444,17 +444,17 @@
             <div class="row gtr-uniform">
               <div class="col-6 col-12-xsmall">
                 <label for="nome" class="align-left labelGrudado">Nome:</label>
-                <input type="text" name="nome" id="nome" value="" placeholder="Seu nome" />
+                <input type="text" name="nome" id="nomeTestar" value="" placeholder="Seu nome" />
               </div>
               <div class="col-6 col-12-xsmall">
                 <label for="email" class="align-left labelGrudado">e-mail:</label>
-                <input type="email" name="email" id="email" value="" placeholder="Seu e-mail" />
+                <input type="email" name="email" id="emailTestar" value="" placeholder="Seu e-mail" />
               </div>
               <div class="col-12">
                 <label for="mensagem" class="align-left labelGrudado">Mensagem</label>
                 <textarea
                   name="mensagem"
-                  id="mensagem"
+                  id="mensagemTestar"
                   placeholder="Fique à vontade para nos enviar sugestões ou dúvidas por aqui!"
                   rows="6"
                 ></textarea>
@@ -470,7 +470,7 @@
               </div>
               <div class="col-12">
                 <ul class="actions">
-                  <li><input type="submit" value="Enviar" class="primary" /></li>
+                  <li><input type="submit" value="Enviar" class="primary" id="botTestar"/></li>
                 </ul>
               </div>
             </div>
@@ -561,6 +561,15 @@
     </div>
 
     <!-- Scripts -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+    https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
+
+
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.scrollex.min.js"></script>
     <script src="assets/js/jquery.scrolly.min.js"></script>
