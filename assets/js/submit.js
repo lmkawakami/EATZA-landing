@@ -220,6 +220,7 @@ function Testar(e) {
   e.preventDefault();
   let nome = document.getElementById("nomeTestar").value;
   let email = document.getElementById("emailTestar").value;
+  let telefone = document.getElementById("telefoneTestar").value;
   let mensagem = document.getElementById("mensagemTestar").value;
 
   console.log(nome);
@@ -233,6 +234,7 @@ function Testar(e) {
       //dados enviados
       Nome: nome,
       Email: email,
+      Telefone: telefone,
       Mensagem: mensagem,
       Data: new Date(),
       Local: posi,
