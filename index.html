@@ -112,7 +112,7 @@
           </div>
           <footer class="major">
             <ul class="actions special">
-              <li><a href="#testar" class="button primary">Quero testar!</a></li>
+              <li><a id="CTA_Introdução" href="#testar" class="button primary" onclick="CTA(event)">Quero testar!</a></li>
             </ul>
           </footer>
         </section>
@@ -262,7 +262,7 @@
           </div>
           <footer class="major">
             <ul class="actions special">
-              <li><a href="#testar" class="button primary">Quero testar!</a></li>
+              <li><a id="CTA_NossaOferta" href="#testar" class="button primary" onclick="CTA(event)">Quero testar!</a></li>
             </ul>
           </footer>
         </section>
@@ -346,7 +346,7 @@
           </p>
           <footer class="major">
             <ul class="actions special">
-              <li><a href="#testar" class="button primary">Quero testar!</a></li>
+              <li><a id="CTA_QuantoCusta?" href="#testar" class="button primary" onclick="CTA(event)">Quero testar!</a></li>
             </ul>
           </footer>
         </section>
@@ -372,7 +372,7 @@
           </ul>
           <footer class="major">
             <ul class="actions special">
-              <li><a href="#testar" class="button primary">Quero testar!</a></li>
+              <li><a id="CTA_OQueRecebo?" href="#testar" class="button primary" onclick="CTA(event)">Quero testar!</a></li>
             </ul>
           </footer>
         </section>
@@ -384,8 +384,8 @@
             Parece bom demais para ser verdade?
           </header>
           <p class="align-left QFAQ" id="Q1" onclick="FAQ1()">
-            <strong class="cor5">
-              P: Porque a EATZA é tão diferente dos aplicativos de delivery como iFood ou Rappi? <span id="Q1Action">▼</span>
+            <strong id="FAQ1" class="cor5" onclick="FAQ(event)">
+              P-1: Porque a EATZA é tão diferente dos aplicativos de delivery como iFood ou Rappi? <span id="Q1Action">▼</span>
             </strong>
           </p>
           <p class="justify" id="R1" style="display: none;">
@@ -397,7 +397,7 @@
             parceiro dono de pizzaria e em suas necessidades.
           </p>
           <p class="align-left QFAQ" id="Q2" onclick="FAQ2()">
-            <strong class="cor5">P: Quanto custa a EATZA para você, pizzeria parceira? <span id="Q2Action">▼</span></strong>
+            <strong id="FAQ2" class="cor5" onclick="FAQ(event)">P-2: Quanto custa a EATZA para você, pizzeria parceira? <span id="Q2Action">▼</span></strong>
           </p>
           <p class="justify" id="R2" style="display: none;">
             R: Ao ínves de cobramos um percentual, como outros aplicativos de delivery fazem, sempre pegando uma boa
@@ -406,7 +406,7 @@
             paga pelo que usa, se não receber pedidos pela nossa plataforma você não paga nada.
           </p>
           <p class="align-left QFAQ" id="Q3" onclick="FAQ3()">
-            <strong class="cor5">P: Qual é o custo adicional pela criação do meu site, cadastro na plataforma e todo o apoio de marketing?<span id="Q3Action">▼</span></strong>
+            <strong id="FAQ3" class="cor5" onclick="FAQ(event)">P-3: Qual é o custo adicional pela criação do meu site, cadastro na plataforma e todo o apoio de marketing?<span id="Q3Action">▼</span></strong>
           </p>
           <p class="justify" id="R3" style="display: none;">
             R: Todos esses serviços não possuem nenhum custo adicional. Não recebemos nada além dos <strong class="cor1">R$ 2,99</strong> por pedido feito na plataforma EATZA.
@@ -414,7 +414,7 @@
             Sabemos que ajudando nossas pizzarias parceiras com todos os serviços de marketing e tecnologia, conseguiremos aumentar suas vendas e seus lucros e, por consequência, todo mundo ganha mais. O sucesso da EATZA é o sucesso das nossas pizzarias parceiras!
           </p>
           <p class="align-left QFAQ" id="Q4" onclick="FAQ4()">
-            <strong class="cor5">P: É a primeira vez que ouço falar da EATZA. A plataforma está disponível para quais regiões e cidades? <span id="Q4Action">▼</span></strong>
+            <strong id="FAQ4" class="cor5" onclick="FAQ(event)">P-4: É a primeira vez que ouço falar da EATZA. A plataforma está disponível para quais regiões e cidades? <span id="Q4Action">▼</span></strong>
           </p>
           <p class="justify" id="R4" style="display: none;">
             R: Nossa plataforma ainda está em desenvolvimento e não foi lançada oficialmente.
@@ -426,7 +426,7 @@
             
           <footer class="major">
             <ul class="actions special">
-              <li><a href="#testar" class="button primary">Quero testar!</a></li>
+              <li><a id="CTA_FAQ" href="#testar" class="button primary" onclick="CTA(event)">Quero testar!</a></li>
             </ul>
           </footer>
         </section>
@@ -468,10 +468,11 @@
               <div class="col-12 align-left">
                 <input type="checkbox" id="robo" name="robo" />
               </div>
+              <div class="col-12" id="formOK" style="display: none;">
+                <p><strong class="cor1">Recebemos seus dados com sucesso. Entraremos em contato em breve!</strong></p>
+              </div>
               <div class="col-12">
-                <ul class="actions">
-                  <li><input type="submit" value="Enviar" class="primary" id="botTestar"/></li>
-                </ul>
+                <input type="submit" value="Enviar" class="primary" id="botTestar"/>
               </div>
             </div>
           </form>
