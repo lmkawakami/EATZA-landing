@@ -145,7 +145,7 @@ setInterval(function () {
   // console.log("Seção:");
   // console.log(Seção);
   SalvaSeções();
-}, 30000);
+}, 60000);
 
 //-----------------------------------------------------
 
