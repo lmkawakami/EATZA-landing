@@ -152,8 +152,9 @@ setInterval(function () {
 //captar os clickes da página
 let botCalcular = document.getElementById("Calcular");
 botCalcular.addEventListener("click", Calcular);
-let botTestar = document.getElementById("botTestar");
-botTestar.addEventListener("click", Testar);
+// let botTestar = document.getElementById("botTestar");
+// botTestar.addEventListener("click", Testar);
+document.getElementById("registrationform").addEventListener("submit", Testar);
 
 function Calcular() {
   const delayReativar = 1000; //tempo de espera para que a calculadora não seja metralhada
