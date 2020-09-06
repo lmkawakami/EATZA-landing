@@ -219,7 +219,7 @@ function Calcular() {
 
 function Testar(e) {
   console.log("novo submit");
-  // e.preventDefault();
+  e.preventDefault();
   let nome = document.getElementById("nomeTestar").value;
   let email = document.getElementById("emailTestar").value;
   let telefone = document.getElementById("telefoneTestar").value;
