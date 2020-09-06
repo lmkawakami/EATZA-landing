@@ -248,6 +248,7 @@ function Testar(e) {
     })
     .then(function () {
       console.log("interesse registrado");
+      analytics.logEvent("notification_received");
       let ok = document.getElementById("formOK");
       ok.style.display = "block";
       botTestar.disabled = true;
