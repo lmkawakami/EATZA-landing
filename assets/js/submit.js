@@ -218,7 +218,8 @@ function Calcular() {
 }
 
 function Testar(e) {
-  e.preventDefault();
+  console.log("novo submit");
+  // e.preventDefault();
   let nome = document.getElementById("nomeTestar").value;
   let email = document.getElementById("emailTestar").value;
   let telefone = document.getElementById("telefoneTestar").value;
